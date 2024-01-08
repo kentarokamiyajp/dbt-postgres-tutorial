@@ -1,0 +1,229 @@
+============================== 08:18:04.440995 | b8ad0006-ff72-4692-bca1-cf201644277c ==============================
+[0m08:18:04.440995 [info ] [MainThread]: Running with dbt=1.7.4
+[0m08:18:04.441609 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/dbt_projects/crypto_etl', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/dbt_projects/crypto_etl/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt run --select get_stats', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m08:18:04.534622 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b8ad0006-ff72-4692-bca1-cf201644277c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa35eaf9d30>]}
+[0m08:18:04.581006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b8ad0006-ff72-4692-bca1-cf201644277c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa35d90bfd0>]}
+[0m08:18:04.581523 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m08:18:04.585907 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m08:18:04.602905 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m08:18:04.603166 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m08:18:04.606299 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b8ad0006-ff72-4692-bca1-cf201644277c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa359eecfd0>]}
+[0m08:18:04.613200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b8ad0006-ff72-4692-bca1-cf201644277c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa35a245340>]}
+[0m08:18:04.613471 [info ] [MainThread]: Found 3 models, 6 tests, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m08:18:04.613717 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b8ad0006-ff72-4692-bca1-cf201644277c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa35a245280>]}
+[0m08:18:04.614623 [info ] [MainThread]: 
+[0m08:18:04.615105 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m08:18:04.616160 [debug] [ThreadPool]: Acquiring new postgres connection 'list_crypto_db'
+[0m08:18:04.626841 [debug] [ThreadPool]: Using postgres connection "list_crypto_db"
+[0m08:18:04.627255 [debug] [ThreadPool]: On list_crypto_db: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "connection_name": "list_crypto_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m08:18:04.627578 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:18:04.633661 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m08:18:04.635119 [debug] [ThreadPool]: On list_crypto_db: Close
+[0m08:18:04.636868 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_crypto_db, now list_crypto_db_public)
+[0m08:18:04.643482 [debug] [ThreadPool]: Using postgres connection "list_crypto_db_public"
+[0m08:18:04.643930 [debug] [ThreadPool]: On list_crypto_db_public: BEGIN
+[0m08:18:04.644285 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m08:18:04.648311 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m08:18:04.648699 [debug] [ThreadPool]: Using postgres connection "list_crypto_db_public"
+[0m08:18:04.649072 [debug] [ThreadPool]: On list_crypto_db_public: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "connection_name": "list_crypto_db_public"} */
+select
+      'crypto_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'crypto_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'crypto_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m08:18:04.650802 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.0 seconds
+[0m08:18:04.652087 [debug] [ThreadPool]: On list_crypto_db_public: ROLLBACK
+[0m08:18:04.652553 [debug] [ThreadPool]: On list_crypto_db_public: Close
+[0m08:18:04.656156 [debug] [MainThread]: Using postgres connection "master"
+[0m08:18:04.656427 [debug] [MainThread]: On master: BEGIN
+[0m08:18:04.656624 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m08:18:04.659762 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m08:18:04.660019 [debug] [MainThread]: Using postgres connection "master"
+[0m08:18:04.660256 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m08:18:04.663394 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m08:18:04.664016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b8ad0006-ff72-4692-bca1-cf201644277c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa35a745c10>]}
+[0m08:18:04.664298 [debug] [MainThread]: On master: ROLLBACK
+[0m08:18:04.664582 [debug] [MainThread]: Using postgres connection "master"
+[0m08:18:04.664781 [debug] [MainThread]: On master: BEGIN
+[0m08:18:04.665073 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m08:18:04.665284 [debug] [MainThread]: On master: COMMIT
+[0m08:18:04.665466 [debug] [MainThread]: Using postgres connection "master"
+[0m08:18:04.665630 [debug] [MainThread]: On master: COMMIT
+[0m08:18:04.665876 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m08:18:04.666059 [debug] [MainThread]: On master: Close
+[0m08:18:04.666437 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m08:18:04.666659 [info ] [MainThread]: 
+[0m08:18:04.668421 [debug] [Thread-1  ]: Began running node model.crypto_etl.weekly_avg_price
+[0m08:18:04.669128 [info ] [Thread-1  ]: 1 of 1 START sql table model public.weekly_avg_price ........................... [RUN]
+[0m08:18:04.670078 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_crypto_db_public, now model.crypto_etl.weekly_avg_price)
+[0m08:18:04.670576 [debug] [Thread-1  ]: Began compiling node model.crypto_etl.weekly_avg_price
+[0m08:18:04.677832 [debug] [Thread-1  ]: Writing injected SQL for node "model.crypto_etl.weekly_avg_price"
+[0m08:18:04.678922 [debug] [Thread-1  ]: Timing info for model.crypto_etl.weekly_avg_price (compile): 08:18:04.670901 => 08:18:04.678666
+[0m08:18:04.679304 [debug] [Thread-1  ]: Began executing node model.crypto_etl.weekly_avg_price
+[0m08:18:04.717537 [debug] [Thread-1  ]: Writing runtime sql for node "model.crypto_etl.weekly_avg_price"
+[0m08:18:04.718633 [debug] [Thread-1  ]: Using postgres connection "model.crypto_etl.weekly_avg_price"
+[0m08:18:04.719092 [debug] [Thread-1  ]: On model.crypto_etl.weekly_avg_price: BEGIN
+[0m08:18:04.719439 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:18:04.722711 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m08:18:04.722958 [debug] [Thread-1  ]: Using postgres connection "model.crypto_etl.weekly_avg_price"
+[0m08:18:04.723179 [debug] [Thread-1  ]: On model.crypto_etl.weekly_avg_price: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "node_id": "model.crypto_etl.weekly_avg_price"} */
+
+  
+    
+
+  create  table "crypto_db"."public"."weekly_avg_price__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+WITH 
+crypto_candles_with_week_number AS (
+    SELECT
+        *,
+        EXTRACT('week' FROM dt) AS week_num
+    FROM
+        public.crypto_candles
+),
+avg_price AS (
+    SELECT
+        id,
+        week_num,
+        avg(close) AS avg_close,
+        avg(volume) AS avg_volume
+    FROM
+        crypto_candles_with_week_number
+    GROUP BY
+        id,
+        week_num
+)
+SELECT * FROM avg_price
+  );
+  
+[0m08:18:04.729825 [debug] [Thread-1  ]: SQL status: SELECT 66 in 0.0 seconds
+[0m08:18:04.732912 [debug] [Thread-1  ]: Using postgres connection "model.crypto_etl.weekly_avg_price"
+[0m08:18:04.733176 [debug] [Thread-1  ]: On model.crypto_etl.weekly_avg_price: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "node_id": "model.crypto_etl.weekly_avg_price"} */
+alter table "crypto_db"."public"."weekly_avg_price__dbt_tmp" rename to "weekly_avg_price"
+[0m08:18:04.733586 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m08:18:04.742909 [debug] [Thread-1  ]: On model.crypto_etl.weekly_avg_price: COMMIT
+[0m08:18:04.743171 [debug] [Thread-1  ]: Using postgres connection "model.crypto_etl.weekly_avg_price"
+[0m08:18:04.743394 [debug] [Thread-1  ]: On model.crypto_etl.weekly_avg_price: COMMIT
+[0m08:18:04.746192 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m08:18:04.749442 [debug] [Thread-1  ]: Applying DROP to: "crypto_db"."public"."weekly_avg_price__dbt_backup"
+[0m08:18:04.751857 [debug] [Thread-1  ]: Using postgres connection "model.crypto_etl.weekly_avg_price"
+[0m08:18:04.752099 [debug] [Thread-1  ]: On model.crypto_etl.weekly_avg_price: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "node_id": "model.crypto_etl.weekly_avg_price"} */
+drop table if exists "crypto_db"."public"."weekly_avg_price__dbt_backup" cascade
+[0m08:18:04.752462 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.0 seconds
+[0m08:18:04.753207 [debug] [Thread-1  ]: Timing info for model.crypto_etl.weekly_avg_price (execute): 08:18:04.679545 => 08:18:04.753111
+[0m08:18:04.753430 [debug] [Thread-1  ]: On model.crypto_etl.weekly_avg_price: Close
+[0m08:18:04.753859 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b8ad0006-ff72-4692-bca1-cf201644277c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa359eae850>]}
+[0m08:18:04.754198 [info ] [Thread-1  ]: 1 of 1 OK created sql table model public.weekly_avg_price ...................... [[32mSELECT 66[0m in 0.08s]
+[0m08:18:04.754561 [debug] [Thread-1  ]: Finished running node model.crypto_etl.weekly_avg_price
+[0m08:18:04.755505 [debug] [MainThread]: Using postgres connection "master"
+[0m08:18:04.755732 [debug] [MainThread]: On master: BEGIN
+[0m08:18:04.755937 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m08:18:04.759469 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m08:18:04.759706 [debug] [MainThread]: On master: COMMIT
+[0m08:18:04.759929 [debug] [MainThread]: Using postgres connection "master"
+[0m08:18:04.760099 [debug] [MainThread]: On master: COMMIT
+[0m08:18:04.760334 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m08:18:04.760525 [debug] [MainThread]: On master: Close
+[0m08:18:04.760890 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:18:04.761083 [debug] [MainThread]: Connection 'model.crypto_etl.weekly_avg_price' was properly closed.
+[0m08:18:04.761275 [info ] [MainThread]: 
+[0m08:18:04.761512 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.15 seconds (0.15s).
+[0m08:18:04.761906 [debug] [MainThread]: Command end result
+[0m08:18:04.767619 [info ] [MainThread]: 
+[0m08:18:04.767873 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m08:18:04.768127 [info ] [MainThread]: 
+[0m08:18:04.768400 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m08:18:04.769235 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.35828587, "process_user_time": 1.273667, "process_kernel_time": 0.068714, "process_mem_max_rss": "108912", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m08:18:04.769788 [debug] [MainThread]: Command `dbt run` succeeded at 08:18:04.769659 after 0.36 seconds
+[0m08:18:04.770156 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa35d1cd430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa35d90bfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa35eaf9d30>]}
+[0m08:18:04.770512 [debug] [MainThread]: Flushing usage events
