@@ -26,7 +26,9 @@
    - postgres_host
      - Initial data is automatically inserted.
 
-## Run the first DBT model
+## Run the DBT models
+
+### Example model
 
 1. Enter the container
 
@@ -73,4 +75,31 @@
 
         ``` [bash]
         dbt test --select example
+        ```
+
+### Custom model
+
+1. Check the working directory.
+
+    ``` [bash]
+    pwd
+    # /home/dbt_projects/crypto_etl
+    ```
+
+2. Run the following dbt commands
+
+    - Run the custom model
+
+        ``` [bash]
+        dbt run --select get_stats
+        ```
+
+    - Test the custom model
+      - A new table is created by running the model above.
+      - And the model has composite key which is composed by id and week_num columns.
+      - Therefore, in the test, check the composite key is unique.
+      - The test is defined in ```dbt_projects/crypto_etl/models/get_stats/schema.yml```
+
+        ``` [bash]
+        dbt test --select get_stats
         ```
