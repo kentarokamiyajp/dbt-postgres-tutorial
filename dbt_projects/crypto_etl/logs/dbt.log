@@ -1,0 +1,1437 @@
+[0m05:31:01.547678 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6f94a520d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6f9637dcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6f928a1610>]}
+
+
+============================== 05:31:01.550143 | 6065c713-ecd0-49ce-b810-7eaf9c3b3089 ==============================
+[0m05:31:01.550143 [info ] [MainThread]: Running with dbt=1.7.4
+[0m05:31:01.550652 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/dbt_projects/crypto_etl/logs', 'version_check': 'True', 'profiles_dir': '/home/dbt_projects/crypto_etl', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m05:31:01.551284 [info ] [MainThread]: dbt version: 1.7.4
+[0m05:31:01.551657 [info ] [MainThread]: python version: 3.9.5
+[0m05:31:01.551968 [info ] [MainThread]: python path: /home/venvs/dbt/bin/python3
+[0m05:31:01.552284 [info ] [MainThread]: os info: Linux-6.4.16-linuxkit-x86_64-with-glibc2.35
+[0m05:31:01.556287 [info ] [MainThread]: Using profiles dir at /home/dbt_projects/crypto_etl
+[0m05:31:01.556709 [info ] [MainThread]: Using profiles.yml file at /home/dbt_projects/crypto_etl/profiles.yml
+[0m05:31:01.557113 [info ] [MainThread]: Using dbt_project.yml file at /home/dbt_projects/crypto_etl/dbt_project.yml
+[0m05:31:01.597627 [info ] [MainThread]: Configuration:
+[0m05:31:01.597957 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m05:31:01.598224 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m05:31:01.598478 [info ] [MainThread]: Required dependencies:
+[0m05:31:01.598734 [debug] [MainThread]: Executing "git --help"
+[0m05:31:01.602811 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m05:31:01.603247 [debug] [MainThread]: STDERR: "b''"
+[0m05:31:01.603474 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m05:31:01.603680 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m05:31:01.603907 [info ] [MainThread]: [31m1 check failed:[0m
+[0m05:31:01.604077 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Could not find profile named 'crypto_etl'
+
+
+[0m05:31:01.604687 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.084652625, "process_user_time": 1.018357, "process_kernel_time": 0.054179, "process_mem_max_rss": "93216", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m05:31:01.605044 [debug] [MainThread]: Command `dbt debug` failed at 05:31:01.604975 after 0.09 seconds
+[0m05:31:01.605336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6f94a520d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6f928a11f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6f96e976a0>]}
+[0m05:31:01.605600 [debug] [MainThread]: Flushing usage events
+[0m05:31:39.155151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a91e70430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a8fcbf8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a8fcbf2b0>]}
+
+
+============================== 05:31:39.157184 | 64e616fc-4ffe-4be1-afe6-8ad6ca531c87 ==============================
+[0m05:31:39.157184 [info ] [MainThread]: Running with dbt=1.7.4
+[0m05:31:39.157567 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/dbt_projects/crypto_etl', 'log_path': '/home/dbt_projects/crypto_etl/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m05:31:39.157983 [info ] [MainThread]: dbt version: 1.7.4
+[0m05:31:39.158895 [info ] [MainThread]: python version: 3.9.5
+[0m05:31:39.159127 [info ] [MainThread]: python path: /home/venvs/dbt/bin/python3
+[0m05:31:39.159379 [info ] [MainThread]: os info: Linux-6.4.16-linuxkit-x86_64-with-glibc2.35
+[0m05:31:39.210366 [info ] [MainThread]: Using profiles dir at /home/dbt_projects/crypto_etl
+[0m05:31:39.210711 [info ] [MainThread]: Using profiles.yml file at /home/dbt_projects/crypto_etl/profiles.yml
+[0m05:31:39.210957 [info ] [MainThread]: Using dbt_project.yml file at /home/dbt_projects/crypto_etl/dbt_project.yml
+[0m05:31:39.211317 [info ] [MainThread]: adapter type: postgres
+[0m05:31:39.211554 [info ] [MainThread]: adapter version: 1.7.4
+[0m05:31:39.253367 [info ] [MainThread]: Configuration:
+[0m05:31:39.253710 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m05:31:39.253985 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m05:31:39.254265 [info ] [MainThread]: Required dependencies:
+[0m05:31:39.254592 [debug] [MainThread]: Executing "git --help"
+[0m05:31:39.260493 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m05:31:39.260971 [debug] [MainThread]: STDERR: "b''"
+[0m05:31:39.261250 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m05:31:39.261499 [info ] [MainThread]: Connection:
+[0m05:31:39.261849 [info ] [MainThread]:   host: 172.30.100.1
+[0m05:31:39.262160 [info ] [MainThread]:   port: 5432
+[0m05:31:39.262408 [info ] [MainThread]:   user: postgres
+[0m05:31:39.262653 [info ] [MainThread]:   database: crypto_db
+[0m05:31:39.262865 [info ] [MainThread]:   schema: crypto_candles
+[0m05:31:39.263092 [info ] [MainThread]:   connect_timeout: 10
+[0m05:31:39.263302 [info ] [MainThread]:   role: None
+[0m05:31:39.263511 [info ] [MainThread]:   search_path: None
+[0m05:31:39.263729 [info ] [MainThread]:   keepalives_idle: 0
+[0m05:31:39.263939 [info ] [MainThread]:   sslmode: None
+[0m05:31:39.264149 [info ] [MainThread]:   sslcert: None
+[0m05:31:39.264381 [info ] [MainThread]:   sslkey: None
+[0m05:31:39.264592 [info ] [MainThread]:   sslrootcert: None
+[0m05:31:39.264806 [info ] [MainThread]:   application_name: dbt
+[0m05:31:39.265016 [info ] [MainThread]:   retries: 1
+[0m05:31:39.265353 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m05:31:39.265921 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m05:31:39.266204 [debug] [MainThread]: Using postgres connection "debug"
+[0m05:31:39.266434 [debug] [MainThread]: On debug: select 1 as id
+[0m05:31:39.266669 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m05:31:39.271814 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m05:31:39.272644 [debug] [MainThread]: On debug: Close
+[0m05:31:39.272908 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m05:31:39.273148 [info ] [MainThread]: [32mAll checks passed![0m
+[0m05:31:39.273923 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.14546533, "process_user_time": 1.118026, "process_kernel_time": 0.063001, "process_mem_max_rss": "100624", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m05:31:39.274361 [debug] [MainThread]: Command `dbt debug` succeeded at 05:31:39.274276 after 0.15 seconds
+[0m05:31:39.274636 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m05:31:39.274930 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a91e70430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a8f3d9700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a9115aa30>]}
+[0m05:31:39.275267 [debug] [MainThread]: Flushing usage events
+[0m05:42:10.449994 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0f144590d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0f15d85cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0f122a8790>]}
+
+
+============================== 05:42:10.452148 | 2a45ff4f-fce5-4aab-b9fe-7f9a66a5b003 ==============================
+[0m05:42:10.452148 [info ] [MainThread]: Running with dbt=1.7.4
+[0m05:42:10.452637 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/dbt_projects/crypto_etl/logs', 'profiles_dir': '/home/dbt_projects/crypto_etl', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m05:42:10.453039 [info ] [MainThread]: dbt version: 1.7.4
+[0m05:42:10.453942 [info ] [MainThread]: python version: 3.9.5
+[0m05:42:10.454132 [info ] [MainThread]: python path: /home/venvs/dbt/bin/python3
+[0m05:42:10.454363 [info ] [MainThread]: os info: Linux-6.4.16-linuxkit-x86_64-with-glibc2.35
+[0m05:42:10.501594 [info ] [MainThread]: Using profiles dir at /home/dbt_projects/crypto_etl
+[0m05:42:10.501972 [info ] [MainThread]: Using profiles.yml file at /home/dbt_projects/crypto_etl/profiles.yml
+[0m05:42:10.502220 [info ] [MainThread]: Using dbt_project.yml file at /home/dbt_projects/crypto_etl/dbt_project.yml
+[0m05:42:10.502524 [info ] [MainThread]: adapter type: postgres
+[0m05:42:10.502729 [info ] [MainThread]: adapter version: 1.7.4
+[0m05:42:10.542122 [info ] [MainThread]: Configuration:
+[0m05:42:10.542412 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m05:42:10.542634 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m05:42:10.542808 [info ] [MainThread]: Required dependencies:
+[0m05:42:10.543007 [debug] [MainThread]: Executing "git --help"
+[0m05:42:10.547859 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m05:42:10.548277 [debug] [MainThread]: STDERR: "b''"
+[0m05:42:10.548516 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m05:42:10.548736 [info ] [MainThread]: Connection:
+[0m05:42:10.548951 [info ] [MainThread]:   host: 172.30.100.1
+[0m05:42:10.549144 [info ] [MainThread]:   port: 5432
+[0m05:42:10.549319 [info ] [MainThread]:   user: postgres
+[0m05:42:10.549514 [info ] [MainThread]:   database: crypto_db
+[0m05:42:10.549752 [info ] [MainThread]:   schema: crypto_candles
+[0m05:42:10.549944 [info ] [MainThread]:   connect_timeout: 10
+[0m05:42:10.550141 [info ] [MainThread]:   role: None
+[0m05:42:10.550370 [info ] [MainThread]:   search_path: None
+[0m05:42:10.550579 [info ] [MainThread]:   keepalives_idle: 0
+[0m05:42:10.550825 [info ] [MainThread]:   sslmode: None
+[0m05:42:10.551062 [info ] [MainThread]:   sslcert: None
+[0m05:42:10.551291 [info ] [MainThread]:   sslkey: None
+[0m05:42:10.551509 [info ] [MainThread]:   sslrootcert: None
+[0m05:42:10.551737 [info ] [MainThread]:   application_name: dbt
+[0m05:42:10.551908 [info ] [MainThread]:   retries: 1
+[0m05:42:10.552222 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m05:42:10.552652 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m05:42:10.552872 [debug] [MainThread]: Using postgres connection "debug"
+[0m05:42:10.553089 [debug] [MainThread]: On debug: select 1 as id
+[0m05:42:10.553327 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m05:42:10.557394 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m05:42:10.558202 [debug] [MainThread]: On debug: Close
+[0m05:42:10.558449 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m05:42:10.558672 [info ] [MainThread]: [32mAll checks passed![0m
+[0m05:42:10.559376 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.13570037, "process_user_time": 1.095849, "process_kernel_time": 0.045952, "process_mem_max_rss": "100172", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m05:42:10.559824 [debug] [MainThread]: Command `dbt debug` succeeded at 05:42:10.559735 after 0.14 seconds
+[0m05:42:10.560106 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m05:42:10.560416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0f144590d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0f1226bfa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0f119f5fa0>]}
+[0m05:42:10.560754 [debug] [MainThread]: Flushing usage events
+[0m05:42:34.191216 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f404b833430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f404969a700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f404969aac0>]}
+
+
+============================== 05:42:34.193350 | 207a9f54-e0e5-4056-b8d1-b10fe7d2d44e ==============================
+[0m05:42:34.193350 [info ] [MainThread]: Running with dbt=1.7.4
+[0m05:42:34.193733 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/dbt_projects/crypto_etl', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/home/dbt_projects/crypto_etl/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt test', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m05:42:34.289833 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '207a9f54-e0e5-4056-b8d1-b10fe7d2d44e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f40496a0880>]}
+[0m05:42:34.338323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '207a9f54-e0e5-4056-b8d1-b10fe7d2d44e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4048d0dd30>]}
+[0m05:42:34.338925 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m05:42:34.343647 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m05:42:34.344357 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m05:42:34.344633 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '207a9f54-e0e5-4056-b8d1-b10fe7d2d44e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4048976160>]}
+[0m05:42:34.875603 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '207a9f54-e0e5-4056-b8d1-b10fe7d2d44e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f404806dfd0>]}
+[0m05:42:34.883027 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '207a9f54-e0e5-4056-b8d1-b10fe7d2d44e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f404806d670>]}
+[0m05:42:34.883403 [info ] [MainThread]: Found 2 models, 4 tests, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m05:42:34.883661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '207a9f54-e0e5-4056-b8d1-b10fe7d2d44e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4048976160>]}
+[0m05:42:34.884720 [info ] [MainThread]: 
+[0m05:42:34.885223 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m05:42:34.886557 [debug] [ThreadPool]: Acquiring new postgres connection 'list_crypto_db_crypto_candles'
+[0m05:42:34.897141 [debug] [ThreadPool]: Using postgres connection "list_crypto_db_crypto_candles"
+[0m05:42:34.897564 [debug] [ThreadPool]: On list_crypto_db_crypto_candles: BEGIN
+[0m05:42:34.897952 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:42:34.903089 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m05:42:34.903567 [debug] [ThreadPool]: Using postgres connection "list_crypto_db_crypto_candles"
+[0m05:42:34.903925 [debug] [ThreadPool]: On list_crypto_db_crypto_candles: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "connection_name": "list_crypto_db_crypto_candles"} */
+select
+      'crypto_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'crypto_candles'
+    union all
+    select
+      'crypto_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'crypto_candles'
+    union all
+    select
+      'crypto_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'crypto_candles'
+  
+[0m05:42:34.906934 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m05:42:34.908194 [debug] [ThreadPool]: On list_crypto_db_crypto_candles: ROLLBACK
+[0m05:42:34.908667 [debug] [ThreadPool]: On list_crypto_db_crypto_candles: Close
+[0m05:42:34.912064 [debug] [MainThread]: Using postgres connection "master"
+[0m05:42:34.912389 [debug] [MainThread]: On master: BEGIN
+[0m05:42:34.912623 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m05:42:34.915864 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m05:42:34.916106 [debug] [MainThread]: Using postgres connection "master"
+[0m05:42:34.916411 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m05:42:34.919361 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m05:42:34.920092 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '207a9f54-e0e5-4056-b8d1-b10fe7d2d44e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4048077550>]}
+[0m05:42:34.920442 [debug] [MainThread]: On master: ROLLBACK
+[0m05:42:34.920753 [debug] [MainThread]: Using postgres connection "master"
+[0m05:42:34.920975 [debug] [MainThread]: On master: BEGIN
+[0m05:42:34.921297 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m05:42:34.921493 [debug] [MainThread]: On master: COMMIT
+[0m05:42:34.921677 [debug] [MainThread]: Using postgres connection "master"
+[0m05:42:34.921857 [debug] [MainThread]: On master: COMMIT
+[0m05:42:34.922140 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m05:42:34.922342 [debug] [MainThread]: On master: Close
+[0m05:42:34.922814 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m05:42:34.923091 [info ] [MainThread]: 
+[0m05:42:34.925096 [debug] [Thread-1  ]: Began running node test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710
+[0m05:42:34.925653 [debug] [Thread-2  ]: Began running node test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778
+[0m05:42:34.926191 [info ] [Thread-1  ]: 1 of 4 START test not_null_my_first_dbt_model_id ............................... [RUN]
+[0m05:42:34.926742 [info ] [Thread-2  ]: 2 of 4 START test not_null_my_second_dbt_model_id .............................. [RUN]
+[0m05:42:34.927602 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_crypto_db_crypto_candles, now test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710)
+[0m05:42:34.928452 [debug] [Thread-2  ]: Acquiring new postgres connection 'test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778'
+[0m05:42:34.928848 [debug] [Thread-1  ]: Began compiling node test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710
+[0m05:42:34.929257 [debug] [Thread-2  ]: Began compiling node test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778
+[0m05:42:34.939960 [debug] [Thread-1  ]: Writing injected SQL for node "test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m05:42:34.943778 [debug] [Thread-2  ]: Writing injected SQL for node "test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778"
+[0m05:42:34.945254 [debug] [Thread-1  ]: Timing info for test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710 (compile): 05:42:34.929626 => 05:42:34.945061
+[0m05:42:34.945712 [debug] [Thread-2  ]: Timing info for test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778 (compile): 05:42:34.940128 => 05:42:34.945455
+[0m05:42:34.945954 [debug] [Thread-1  ]: Began executing node test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710
+[0m05:42:34.946290 [debug] [Thread-2  ]: Began executing node test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778
+[0m05:42:34.955515 [debug] [Thread-1  ]: Writing runtime sql for node "test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m05:42:34.957260 [debug] [Thread-2  ]: Writing runtime sql for node "test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778"
+[0m05:42:34.958933 [debug] [Thread-1  ]: Using postgres connection "test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m05:42:34.959298 [debug] [Thread-2  ]: Using postgres connection "test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778"
+[0m05:42:34.959656 [debug] [Thread-1  ]: On test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710: BEGIN
+[0m05:42:34.960076 [debug] [Thread-2  ]: On test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778: BEGIN
+[0m05:42:34.960502 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m05:42:34.960919 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+[0m05:42:34.965334 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m05:42:34.965803 [debug] [Thread-1  ]: Using postgres connection "test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m05:42:34.966090 [debug] [Thread-2  ]: SQL status: BEGIN in 0.0 seconds
+[0m05:42:34.966430 [debug] [Thread-1  ]: On test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "node_id": "test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from "crypto_db"."crypto_candles"."my_first_dbt_model"
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m05:42:34.966826 [debug] [Thread-2  ]: Using postgres connection "test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778"
+[0m05:42:34.967283 [debug] [Thread-2  ]: On test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "node_id": "test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from "crypto_db"."crypto_candles"."my_second_dbt_model"
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m05:42:34.967635 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "crypto_candles.my_first_dbt_model" does not exist
+LINE 14: from "crypto_db"."crypto_candles"."my_first_dbt_model"
+              ^
+
+[0m05:42:34.968277 [debug] [Thread-1  ]: On test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710: ROLLBACK
+[0m05:42:34.968605 [debug] [Thread-2  ]: Postgres adapter: Postgres error: relation "crypto_candles.my_second_dbt_model" does not exist
+LINE 14: from "crypto_db"."crypto_candles"."my_second_dbt_model"
+              ^
+
+[0m05:42:34.968958 [debug] [Thread-2  ]: On test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778: ROLLBACK
+[0m05:42:34.969448 [debug] [Thread-1  ]: Timing info for test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710 (execute): 05:42:34.946515 => 05:42:34.969125
+[0m05:42:34.969954 [debug] [Thread-2  ]: Timing info for test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778 (execute): 05:42:34.955698 => 05:42:34.969833
+[0m05:42:34.970247 [debug] [Thread-1  ]: On test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710: Close
+[0m05:42:34.970670 [debug] [Thread-2  ]: On test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778: Close
+[0m05:42:34.973283 [debug] [Thread-2  ]: Database Error in test not_null_my_second_dbt_model_id (models/example/schema.yml)
+  relation "crypto_candles.my_second_dbt_model" does not exist
+  LINE 14: from "crypto_db"."crypto_candles"."my_second_dbt_model"
+                ^
+  compiled Code at target/run/crypto_etl/models/example/schema.yml/not_null_my_second_dbt_model_id.sql
+[0m05:42:34.973817 [debug] [Thread-1  ]: Database Error in test not_null_my_first_dbt_model_id (models/example/schema.yml)
+  relation "crypto_candles.my_first_dbt_model" does not exist
+  LINE 14: from "crypto_db"."crypto_candles"."my_first_dbt_model"
+                ^
+  compiled Code at target/run/crypto_etl/models/example/schema.yml/not_null_my_first_dbt_model_id.sql
+[0m05:42:34.974253 [error] [Thread-2  ]: 2 of 4 ERROR not_null_my_second_dbt_model_id ................................... [[31mERROR[0m in 0.05s]
+[0m05:42:34.974811 [error] [Thread-1  ]: 1 of 4 ERROR not_null_my_first_dbt_model_id .................................... [[31mERROR[0m in 0.05s]
+[0m05:42:34.975587 [debug] [Thread-2  ]: Finished running node test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778
+[0m05:42:34.976299 [debug] [Thread-1  ]: Finished running node test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710
+[0m05:42:34.976750 [debug] [Thread-2  ]: Began running node test.crypto_etl.unique_my_first_dbt_model_id.16e066b321
+[0m05:42:34.977379 [debug] [Thread-1  ]: Began running node test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493
+[0m05:42:34.977818 [info ] [Thread-2  ]: 3 of 4 START test unique_my_first_dbt_model_id ................................. [RUN]
+[0m05:42:34.978235 [info ] [Thread-1  ]: 4 of 4 START test unique_my_second_dbt_model_id ................................ [RUN]
+[0m05:42:34.978816 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778, now test.crypto_etl.unique_my_first_dbt_model_id.16e066b321)
+[0m05:42:34.979552 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710, now test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493)
+[0m05:42:34.979949 [debug] [Thread-2  ]: Began compiling node test.crypto_etl.unique_my_first_dbt_model_id.16e066b321
+[0m05:42:34.980363 [debug] [Thread-1  ]: Began compiling node test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493
+[0m05:42:34.984508 [debug] [Thread-2  ]: Writing injected SQL for node "test.crypto_etl.unique_my_first_dbt_model_id.16e066b321"
+[0m05:42:34.988608 [debug] [Thread-1  ]: Writing injected SQL for node "test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493"
+[0m05:42:34.989421 [debug] [Thread-2  ]: Timing info for test.crypto_etl.unique_my_first_dbt_model_id.16e066b321 (compile): 05:42:34.980705 => 05:42:34.989281
+[0m05:42:34.989759 [debug] [Thread-1  ]: Timing info for test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493 (compile): 05:42:34.984769 => 05:42:34.989532
+[0m05:42:34.990057 [debug] [Thread-2  ]: Began executing node test.crypto_etl.unique_my_first_dbt_model_id.16e066b321
+[0m05:42:34.990391 [debug] [Thread-1  ]: Began executing node test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493
+[0m05:42:34.991875 [debug] [Thread-2  ]: Writing runtime sql for node "test.crypto_etl.unique_my_first_dbt_model_id.16e066b321"
+[0m05:42:34.994181 [debug] [Thread-1  ]: Writing runtime sql for node "test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493"
+[0m05:42:34.994783 [debug] [Thread-2  ]: Using postgres connection "test.crypto_etl.unique_my_first_dbt_model_id.16e066b321"
+[0m05:42:34.995025 [debug] [Thread-2  ]: On test.crypto_etl.unique_my_first_dbt_model_id.16e066b321: BEGIN
+[0m05:42:34.995337 [debug] [Thread-1  ]: Using postgres connection "test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493"
+[0m05:42:34.995707 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+[0m05:42:34.996186 [debug] [Thread-1  ]: On test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493: BEGIN
+[0m05:42:34.996844 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m05:42:35.001007 [debug] [Thread-2  ]: SQL status: BEGIN in 0.0 seconds
+[0m05:42:35.001472 [debug] [Thread-2  ]: Using postgres connection "test.crypto_etl.unique_my_first_dbt_model_id.16e066b321"
+[0m05:42:35.001829 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m05:42:35.002269 [debug] [Thread-2  ]: On test.crypto_etl.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "node_id": "test.crypto_etl.unique_my_first_dbt_model_id.16e066b321"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "crypto_db"."crypto_candles"."my_first_dbt_model"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m05:42:35.002711 [debug] [Thread-1  ]: Using postgres connection "test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493"
+[0m05:42:35.003114 [debug] [Thread-1  ]: On test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "node_id": "test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "crypto_db"."crypto_candles"."my_second_dbt_model"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m05:42:35.003429 [debug] [Thread-2  ]: Postgres adapter: Postgres error: relation "crypto_candles.my_first_dbt_model" does not exist
+LINE 15: from "crypto_db"."crypto_candles"."my_first_dbt_model"
+              ^
+
+[0m05:42:35.003925 [debug] [Thread-2  ]: On test.crypto_etl.unique_my_first_dbt_model_id.16e066b321: ROLLBACK
+[0m05:42:35.004121 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "crypto_candles.my_second_dbt_model" does not exist
+LINE 15: from "crypto_db"."crypto_candles"."my_second_dbt_model"
+              ^
+
+[0m05:42:35.004497 [debug] [Thread-2  ]: Timing info for test.crypto_etl.unique_my_first_dbt_model_id.16e066b321 (execute): 05:42:34.990657 => 05:42:35.004382
+[0m05:42:35.004659 [debug] [Thread-1  ]: On test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493: ROLLBACK
+[0m05:42:35.004922 [debug] [Thread-2  ]: On test.crypto_etl.unique_my_first_dbt_model_id.16e066b321: Close
+[0m05:42:35.005323 [debug] [Thread-1  ]: Timing info for test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493 (execute): 05:42:34.992106 => 05:42:35.005204
+[0m05:42:35.005830 [debug] [Thread-1  ]: On test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493: Close
+[0m05:42:35.006131 [debug] [Thread-2  ]: Database Error in test unique_my_first_dbt_model_id (models/example/schema.yml)
+  relation "crypto_candles.my_first_dbt_model" does not exist
+  LINE 15: from "crypto_db"."crypto_candles"."my_first_dbt_model"
+                ^
+  compiled Code at target/run/crypto_etl/models/example/schema.yml/unique_my_first_dbt_model_id.sql
+[0m05:42:35.006714 [error] [Thread-2  ]: 3 of 4 ERROR unique_my_first_dbt_model_id ...................................... [[31mERROR[0m in 0.03s]
+[0m05:42:35.007037 [debug] [Thread-1  ]: Database Error in test unique_my_second_dbt_model_id (models/example/schema.yml)
+  relation "crypto_candles.my_second_dbt_model" does not exist
+  LINE 15: from "crypto_db"."crypto_candles"."my_second_dbt_model"
+                ^
+  compiled Code at target/run/crypto_etl/models/example/schema.yml/unique_my_second_dbt_model_id.sql
+[0m05:42:35.007376 [debug] [Thread-2  ]: Finished running node test.crypto_etl.unique_my_first_dbt_model_id.16e066b321
+[0m05:42:35.007681 [error] [Thread-1  ]: 4 of 4 ERROR unique_my_second_dbt_model_id ..................................... [[31mERROR[0m in 0.03s]
+[0m05:42:35.008214 [debug] [Thread-1  ]: Finished running node test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493
+[0m05:42:35.009210 [debug] [MainThread]: Using postgres connection "master"
+[0m05:42:35.009442 [debug] [MainThread]: On master: BEGIN
+[0m05:42:35.009640 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m05:42:35.013578 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m05:42:35.013825 [debug] [MainThread]: On master: COMMIT
+[0m05:42:35.014027 [debug] [MainThread]: Using postgres connection "master"
+[0m05:42:35.014247 [debug] [MainThread]: On master: COMMIT
+[0m05:42:35.014504 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m05:42:35.014681 [debug] [MainThread]: On master: Close
+[0m05:42:35.015066 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m05:42:35.015274 [debug] [MainThread]: Connection 'test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m05:42:35.015443 [debug] [MainThread]: Connection 'test.crypto_etl.unique_my_first_dbt_model_id.16e066b321' was properly closed.
+[0m05:42:35.015648 [info ] [MainThread]: 
+[0m05:42:35.015948 [info ] [MainThread]: Finished running 4 tests in 0 hours 0 minutes and 0.13 seconds (0.13s).
+[0m05:42:35.016566 [debug] [MainThread]: Command end result
+[0m05:42:35.023011 [info ] [MainThread]: 
+[0m05:42:35.023296 [info ] [MainThread]: [31mCompleted with 4 errors and 0 warnings:[0m
+[0m05:42:35.023525 [info ] [MainThread]: 
+[0m05:42:35.023752 [error] [MainThread]:   Database Error in test not_null_my_second_dbt_model_id (models/example/schema.yml)
+  relation "crypto_candles.my_second_dbt_model" does not exist
+  LINE 14: from "crypto_db"."crypto_candles"."my_second_dbt_model"
+                ^
+  compiled Code at target/run/crypto_etl/models/example/schema.yml/not_null_my_second_dbt_model_id.sql
+[0m05:42:35.024051 [info ] [MainThread]: 
+[0m05:42:35.024312 [error] [MainThread]:   Database Error in test not_null_my_first_dbt_model_id (models/example/schema.yml)
+  relation "crypto_candles.my_first_dbt_model" does not exist
+  LINE 14: from "crypto_db"."crypto_candles"."my_first_dbt_model"
+                ^
+  compiled Code at target/run/crypto_etl/models/example/schema.yml/not_null_my_first_dbt_model_id.sql
+[0m05:42:35.024558 [info ] [MainThread]: 
+[0m05:42:35.024798 [error] [MainThread]:   Database Error in test unique_my_first_dbt_model_id (models/example/schema.yml)
+  relation "crypto_candles.my_first_dbt_model" does not exist
+  LINE 15: from "crypto_db"."crypto_candles"."my_first_dbt_model"
+                ^
+  compiled Code at target/run/crypto_etl/models/example/schema.yml/unique_my_first_dbt_model_id.sql
+[0m05:42:35.025026 [info ] [MainThread]: 
+[0m05:42:35.025265 [error] [MainThread]:   Database Error in test unique_my_second_dbt_model_id (models/example/schema.yml)
+  relation "crypto_candles.my_second_dbt_model" does not exist
+  LINE 15: from "crypto_db"."crypto_candles"."my_second_dbt_model"
+                ^
+  compiled Code at target/run/crypto_etl/models/example/schema.yml/unique_my_second_dbt_model_id.sql
+[0m05:42:35.025506 [info ] [MainThread]: 
+[0m05:42:35.025762 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=4 SKIP=0 TOTAL=4
+[0m05:42:35.026395 [debug] [MainThread]: Resource report: {"command_name": "test", "command_wall_clock_time": 0.8646898, "process_user_time": 1.78693, "process_kernel_time": 0.080042, "process_mem_max_rss": "118876", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m05:42:35.026733 [debug] [MainThread]: Command `dbt test` failed at 05:42:35.026669 after 0.87 seconds
+[0m05:42:35.026991 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f404b833430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f40481c3070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f40496a0610>]}
+[0m05:42:35.027270 [debug] [MainThread]: Flushing usage events
+[0m05:46:30.556316 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fa247ee20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fa3da1ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fa02dcdc0>]}
+
+
+============================== 05:46:30.558318 | b1d804bc-9edf-4ba6-be3f-fe00ad80a7aa ==============================
+[0m05:46:30.558318 [info ] [MainThread]: Running with dbt=1.7.4
+[0m05:46:30.558727 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/dbt_projects/crypto_etl', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/home/dbt_projects/crypto_etl/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m05:46:30.655802 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b1d804bc-9edf-4ba6-be3f-fe00ad80a7aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fa02dcf40>]}
+[0m05:46:30.705068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b1d804bc-9edf-4ba6-be3f-fe00ad80a7aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fa02e8220>]}
+[0m05:46:30.705651 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m05:46:30.711404 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m05:46:30.727980 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m05:46:30.728257 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m05:46:30.731641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b1d804bc-9edf-4ba6-be3f-fe00ad80a7aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2f9f1620d0>]}
+[0m05:46:30.738839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b1d804bc-9edf-4ba6-be3f-fe00ad80a7aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2f9f461850>]}
+[0m05:46:30.739129 [info ] [MainThread]: Found 2 models, 4 tests, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m05:46:30.739390 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b1d804bc-9edf-4ba6-be3f-fe00ad80a7aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2f9f461610>]}
+[0m05:46:30.740412 [info ] [MainThread]: 
+[0m05:46:30.740954 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m05:46:30.742012 [debug] [ThreadPool]: Acquiring new postgres connection 'list_crypto_db'
+[0m05:46:30.751844 [debug] [ThreadPool]: Using postgres connection "list_crypto_db"
+[0m05:46:30.752300 [debug] [ThreadPool]: On list_crypto_db: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "connection_name": "list_crypto_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m05:46:30.752701 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:46:30.758888 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m05:46:30.760302 [debug] [ThreadPool]: On list_crypto_db: Close
+[0m05:46:30.761521 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_crypto_db, now create_crypto_db_crypto_candles)
+[0m05:46:30.762330 [debug] [ThreadPool]: Creating schema "database: "crypto_db"
+schema: "crypto_candles"
+"
+[0m05:46:30.767601 [debug] [ThreadPool]: Using postgres connection "create_crypto_db_crypto_candles"
+[0m05:46:30.768005 [debug] [ThreadPool]: On create_crypto_db_crypto_candles: BEGIN
+[0m05:46:30.768356 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m05:46:30.772547 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m05:46:30.772951 [debug] [ThreadPool]: Using postgres connection "create_crypto_db_crypto_candles"
+[0m05:46:30.773316 [debug] [ThreadPool]: On create_crypto_db_crypto_candles: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "connection_name": "create_crypto_db_crypto_candles"} */
+create schema if not exists "crypto_candles"
+[0m05:46:30.774120 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.0 seconds
+[0m05:46:30.775024 [debug] [ThreadPool]: On create_crypto_db_crypto_candles: COMMIT
+[0m05:46:30.775383 [debug] [ThreadPool]: Using postgres connection "create_crypto_db_crypto_candles"
+[0m05:46:30.775743 [debug] [ThreadPool]: On create_crypto_db_crypto_candles: COMMIT
+[0m05:46:30.778382 [debug] [ThreadPool]: SQL status: COMMIT in 0.0 seconds
+[0m05:46:30.778796 [debug] [ThreadPool]: On create_crypto_db_crypto_candles: Close
+[0m05:46:30.780748 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_crypto_db_crypto_candles, now list_crypto_db_crypto_candles)
+[0m05:46:30.786999 [debug] [ThreadPool]: Using postgres connection "list_crypto_db_crypto_candles"
+[0m05:46:30.787417 [debug] [ThreadPool]: On list_crypto_db_crypto_candles: BEGIN
+[0m05:46:30.787767 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m05:46:30.792501 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m05:46:30.792879 [debug] [ThreadPool]: Using postgres connection "list_crypto_db_crypto_candles"
+[0m05:46:30.793213 [debug] [ThreadPool]: On list_crypto_db_crypto_candles: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "connection_name": "list_crypto_db_crypto_candles"} */
+select
+      'crypto_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'crypto_candles'
+    union all
+    select
+      'crypto_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'crypto_candles'
+    union all
+    select
+      'crypto_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'crypto_candles'
+  
+[0m05:46:30.796002 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m05:46:30.797786 [debug] [ThreadPool]: On list_crypto_db_crypto_candles: ROLLBACK
+[0m05:46:30.798222 [debug] [ThreadPool]: On list_crypto_db_crypto_candles: Close
+[0m05:46:30.801724 [debug] [MainThread]: Using postgres connection "master"
+[0m05:46:30.802183 [debug] [MainThread]: On master: BEGIN
+[0m05:46:30.802532 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m05:46:30.806617 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m05:46:30.807098 [debug] [MainThread]: Using postgres connection "master"
+[0m05:46:30.807540 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m05:46:30.810610 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m05:46:30.811273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b1d804bc-9edf-4ba6-be3f-fe00ad80a7aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2f9f0be370>]}
+[0m05:46:30.811621 [debug] [MainThread]: On master: ROLLBACK
+[0m05:46:30.811912 [debug] [MainThread]: Using postgres connection "master"
+[0m05:46:30.812109 [debug] [MainThread]: On master: BEGIN
+[0m05:46:30.812403 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m05:46:30.812620 [debug] [MainThread]: On master: COMMIT
+[0m05:46:30.812836 [debug] [MainThread]: Using postgres connection "master"
+[0m05:46:30.813020 [debug] [MainThread]: On master: COMMIT
+[0m05:46:30.813274 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m05:46:30.813469 [debug] [MainThread]: On master: Close
+[0m05:46:30.813902 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m05:46:30.814170 [info ] [MainThread]: 
+[0m05:46:30.816125 [debug] [Thread-1  ]: Began running node model.crypto_etl.my_first_dbt_model
+[0m05:46:30.816784 [info ] [Thread-1  ]: 1 of 2 START sql table model crypto_candles.my_first_dbt_model ................. [RUN]
+[0m05:46:30.817527 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_crypto_db_crypto_candles, now model.crypto_etl.my_first_dbt_model)
+[0m05:46:30.817956 [debug] [Thread-1  ]: Began compiling node model.crypto_etl.my_first_dbt_model
+[0m05:46:30.824982 [debug] [Thread-1  ]: Writing injected SQL for node "model.crypto_etl.my_first_dbt_model"
+[0m05:46:30.825994 [debug] [Thread-1  ]: Timing info for model.crypto_etl.my_first_dbt_model (compile): 05:46:30.818246 => 05:46:30.825749
+[0m05:46:30.826382 [debug] [Thread-1  ]: Began executing node model.crypto_etl.my_first_dbt_model
+[0m05:46:30.862060 [debug] [Thread-1  ]: Writing runtime sql for node "model.crypto_etl.my_first_dbt_model"
+[0m05:46:30.862876 [debug] [Thread-1  ]: Using postgres connection "model.crypto_etl.my_first_dbt_model"
+[0m05:46:30.863117 [debug] [Thread-1  ]: On model.crypto_etl.my_first_dbt_model: BEGIN
+[0m05:46:30.863323 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m05:46:30.866925 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m05:46:30.867179 [debug] [Thread-1  ]: Using postgres connection "model.crypto_etl.my_first_dbt_model"
+[0m05:46:30.867410 [debug] [Thread-1  ]: On model.crypto_etl.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "node_id": "model.crypto_etl.my_first_dbt_model"} */
+
+  
+    
+
+  create  table "crypto_db"."crypto_candles"."my_first_dbt_model__dbt_tmp"
+  
+  
+    as
+  
+  (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+  
+[0m05:46:30.869039 [debug] [Thread-1  ]: SQL status: SELECT 2 in 0.0 seconds
+[0m05:46:30.872323 [debug] [Thread-1  ]: Using postgres connection "model.crypto_etl.my_first_dbt_model"
+[0m05:46:30.872593 [debug] [Thread-1  ]: On model.crypto_etl.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "node_id": "model.crypto_etl.my_first_dbt_model"} */
+alter table "crypto_db"."crypto_candles"."my_first_dbt_model__dbt_tmp" rename to "my_first_dbt_model"
+[0m05:46:30.873012 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m05:46:30.882432 [debug] [Thread-1  ]: On model.crypto_etl.my_first_dbt_model: COMMIT
+[0m05:46:30.882688 [debug] [Thread-1  ]: Using postgres connection "model.crypto_etl.my_first_dbt_model"
+[0m05:46:30.882920 [debug] [Thread-1  ]: On model.crypto_etl.my_first_dbt_model: COMMIT
+[0m05:46:30.885404 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m05:46:30.889260 [debug] [Thread-1  ]: Applying DROP to: "crypto_db"."crypto_candles"."my_first_dbt_model__dbt_backup"
+[0m05:46:30.891700 [debug] [Thread-1  ]: Using postgres connection "model.crypto_etl.my_first_dbt_model"
+[0m05:46:30.891963 [debug] [Thread-1  ]: On model.crypto_etl.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "node_id": "model.crypto_etl.my_first_dbt_model"} */
+drop table if exists "crypto_db"."crypto_candles"."my_first_dbt_model__dbt_backup" cascade
+[0m05:46:30.892344 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.0 seconds
+[0m05:46:30.893186 [debug] [Thread-1  ]: Timing info for model.crypto_etl.my_first_dbt_model (execute): 05:46:30.826633 => 05:46:30.893078
+[0m05:46:30.893433 [debug] [Thread-1  ]: On model.crypto_etl.my_first_dbt_model: Close
+[0m05:46:30.893934 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b1d804bc-9edf-4ba6-be3f-fe00ad80a7aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2f9f0518e0>]}
+[0m05:46:30.894320 [info ] [Thread-1  ]: 1 of 2 OK created sql table model crypto_candles.my_first_dbt_model ............ [[32mSELECT 2[0m in 0.08s]
+[0m05:46:30.894688 [debug] [Thread-1  ]: Finished running node model.crypto_etl.my_first_dbt_model
+[0m05:46:30.895701 [debug] [Thread-2  ]: Began running node model.crypto_etl.my_second_dbt_model
+[0m05:46:30.896302 [info ] [Thread-2  ]: 2 of 2 START sql table model crypto_candles.my_second_dbt_model ................ [RUN]
+[0m05:46:30.897293 [debug] [Thread-2  ]: Acquiring new postgres connection 'model.crypto_etl.my_second_dbt_model'
+[0m05:46:30.897750 [debug] [Thread-2  ]: Began compiling node model.crypto_etl.my_second_dbt_model
+[0m05:46:30.900793 [debug] [Thread-2  ]: Writing injected SQL for node "model.crypto_etl.my_second_dbt_model"
+[0m05:46:30.901726 [debug] [Thread-2  ]: Timing info for model.crypto_etl.my_second_dbt_model (compile): 05:46:30.898067 => 05:46:30.901444
+[0m05:46:30.902185 [debug] [Thread-2  ]: Began executing node model.crypto_etl.my_second_dbt_model
+[0m05:46:30.906238 [debug] [Thread-2  ]: Writing runtime sql for node "model.crypto_etl.my_second_dbt_model"
+[0m05:46:30.907147 [debug] [Thread-2  ]: Using postgres connection "model.crypto_etl.my_second_dbt_model"
+[0m05:46:30.907591 [debug] [Thread-2  ]: On model.crypto_etl.my_second_dbt_model: BEGIN
+[0m05:46:30.908040 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+[0m05:46:30.912357 [debug] [Thread-2  ]: SQL status: BEGIN in 0.0 seconds
+[0m05:46:30.912826 [debug] [Thread-2  ]: Using postgres connection "model.crypto_etl.my_second_dbt_model"
+[0m05:46:30.913238 [debug] [Thread-2  ]: On model.crypto_etl.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "node_id": "model.crypto_etl.my_second_dbt_model"} */
+
+  
+    
+
+  create  table "crypto_db"."crypto_candles"."my_second_dbt_model__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- Use the `ref` function to select from other models
+
+select *
+from "crypto_db"."crypto_candles"."my_first_dbt_model"
+where id = 1
+  );
+  
+[0m05:46:30.914593 [debug] [Thread-2  ]: SQL status: SELECT 1 in 0.0 seconds
+[0m05:46:30.917557 [debug] [Thread-2  ]: Using postgres connection "model.crypto_etl.my_second_dbt_model"
+[0m05:46:30.917990 [debug] [Thread-2  ]: On model.crypto_etl.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "node_id": "model.crypto_etl.my_second_dbt_model"} */
+alter table "crypto_db"."crypto_candles"."my_second_dbt_model__dbt_tmp" rename to "my_second_dbt_model"
+[0m05:46:30.918657 [debug] [Thread-2  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m05:46:30.920450 [debug] [Thread-2  ]: On model.crypto_etl.my_second_dbt_model: COMMIT
+[0m05:46:30.920884 [debug] [Thread-2  ]: Using postgres connection "model.crypto_etl.my_second_dbt_model"
+[0m05:46:30.921312 [debug] [Thread-2  ]: On model.crypto_etl.my_second_dbt_model: COMMIT
+[0m05:46:30.924232 [debug] [Thread-2  ]: SQL status: COMMIT in 0.0 seconds
+[0m05:46:30.926766 [debug] [Thread-2  ]: Applying DROP to: "crypto_db"."crypto_candles"."my_second_dbt_model__dbt_backup"
+[0m05:46:30.927608 [debug] [Thread-2  ]: Using postgres connection "model.crypto_etl.my_second_dbt_model"
+[0m05:46:30.928005 [debug] [Thread-2  ]: On model.crypto_etl.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "node_id": "model.crypto_etl.my_second_dbt_model"} */
+drop table if exists "crypto_db"."crypto_candles"."my_second_dbt_model__dbt_backup" cascade
+[0m05:46:30.928506 [debug] [Thread-2  ]: SQL status: DROP TABLE in 0.0 seconds
+[0m05:46:30.929892 [debug] [Thread-2  ]: Timing info for model.crypto_etl.my_second_dbt_model (execute): 05:46:30.902452 => 05:46:30.929695
+[0m05:46:30.930259 [debug] [Thread-2  ]: On model.crypto_etl.my_second_dbt_model: Close
+[0m05:46:30.931521 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b1d804bc-9edf-4ba6-be3f-fe00ad80a7aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2f9f0be910>]}
+[0m05:46:30.932342 [info ] [Thread-2  ]: 2 of 2 OK created sql table model crypto_candles.my_second_dbt_model ........... [[32mSELECT 1[0m in 0.03s]
+[0m05:46:30.933121 [debug] [Thread-2  ]: Finished running node model.crypto_etl.my_second_dbt_model
+[0m05:46:30.934544 [debug] [MainThread]: Using postgres connection "master"
+[0m05:46:30.934952 [debug] [MainThread]: On master: BEGIN
+[0m05:46:30.935326 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m05:46:30.939672 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m05:46:30.940120 [debug] [MainThread]: On master: COMMIT
+[0m05:46:30.940534 [debug] [MainThread]: Using postgres connection "master"
+[0m05:46:30.940893 [debug] [MainThread]: On master: COMMIT
+[0m05:46:30.941343 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m05:46:30.941722 [debug] [MainThread]: On master: Close
+[0m05:46:30.942472 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m05:46:30.942837 [debug] [MainThread]: Connection 'model.crypto_etl.my_first_dbt_model' was properly closed.
+[0m05:46:30.943183 [debug] [MainThread]: Connection 'model.crypto_etl.my_second_dbt_model' was properly closed.
+[0m05:46:30.943587 [info ] [MainThread]: 
+[0m05:46:30.944021 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 0.20 seconds (0.20s).
+[0m05:46:30.944932 [debug] [MainThread]: Command end result
+[0m05:46:30.954168 [info ] [MainThread]: 
+[0m05:46:30.954642 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m05:46:30.955095 [info ] [MainThread]: 
+[0m05:46:30.955480 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m05:46:30.956357 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.4271967, "process_user_time": 1.348038, "process_kernel_time": 0.050187, "process_mem_max_rss": "110228", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m05:46:30.956964 [debug] [MainThread]: Command `dbt run` succeeded at 05:46:30.956847 after 0.43 seconds
+[0m05:46:30.957380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fa247ee20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2f9f06eeb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fa2ba9ca0>]}
+[0m05:46:30.957823 [debug] [MainThread]: Flushing usage events
+[0m05:55:26.353086 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c562d00d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c57bfbcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c5411fd30>]}
+
+
+============================== 05:55:26.355210 | bba662f7-a657-47a4-b35c-7ceaa40b5af6 ==============================
+[0m05:55:26.355210 [info ] [MainThread]: Running with dbt=1.7.4
+[0m05:55:26.355596 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/dbt_projects/crypto_etl', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/dbt_projects/crypto_etl/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --select example', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m05:55:26.449699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bba662f7-a657-47a4-b35c-7ceaa40b5af6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c54144340>]}
+[0m05:55:26.496275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bba662f7-a657-47a4-b35c-7ceaa40b5af6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c53acf670>]}
+[0m05:55:26.496761 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m05:55:26.501221 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m05:55:26.517938 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m05:55:26.518181 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m05:55:26.521349 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bba662f7-a657-47a4-b35c-7ceaa40b5af6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c52fe30d0>]}
+[0m05:55:26.528710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bba662f7-a657-47a4-b35c-7ceaa40b5af6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c532db8b0>]}
+[0m05:55:26.529020 [info ] [MainThread]: Found 2 models, 4 tests, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m05:55:26.529291 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bba662f7-a657-47a4-b35c-7ceaa40b5af6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c532db670>]}
+[0m05:55:26.530224 [info ] [MainThread]: 
+[0m05:55:26.530727 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m05:55:26.531795 [debug] [ThreadPool]: Acquiring new postgres connection 'list_crypto_db'
+[0m05:55:26.542338 [debug] [ThreadPool]: Using postgres connection "list_crypto_db"
+[0m05:55:26.542804 [debug] [ThreadPool]: On list_crypto_db: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "connection_name": "list_crypto_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m05:55:26.543216 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:55:26.549998 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.0 seconds
+[0m05:55:26.551466 [debug] [ThreadPool]: On list_crypto_db: Close
+[0m05:55:26.553401 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_crypto_db, now list_crypto_db_crypto_candles)
+[0m05:55:26.560126 [debug] [ThreadPool]: Using postgres connection "list_crypto_db_crypto_candles"
+[0m05:55:26.560509 [debug] [ThreadPool]: On list_crypto_db_crypto_candles: BEGIN
+[0m05:55:26.560976 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m05:55:26.565754 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m05:55:26.566135 [debug] [ThreadPool]: Using postgres connection "list_crypto_db_crypto_candles"
+[0m05:55:26.566516 [debug] [ThreadPool]: On list_crypto_db_crypto_candles: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "connection_name": "list_crypto_db_crypto_candles"} */
+select
+      'crypto_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'crypto_candles'
+    union all
+    select
+      'crypto_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'crypto_candles'
+    union all
+    select
+      'crypto_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'crypto_candles'
+  
+[0m05:55:26.569305 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.0 seconds
+[0m05:55:26.570627 [debug] [ThreadPool]: On list_crypto_db_crypto_candles: ROLLBACK
+[0m05:55:26.571086 [debug] [ThreadPool]: On list_crypto_db_crypto_candles: Close
+[0m05:55:26.574846 [debug] [MainThread]: Using postgres connection "master"
+[0m05:55:26.575138 [debug] [MainThread]: On master: BEGIN
+[0m05:55:26.575366 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m05:55:26.578594 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m05:55:26.578823 [debug] [MainThread]: Using postgres connection "master"
+[0m05:55:26.579056 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m05:55:26.582293 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m05:55:26.583012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bba662f7-a657-47a4-b35c-7ceaa40b5af6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c53268dc0>]}
+[0m05:55:26.583389 [debug] [MainThread]: On master: ROLLBACK
+[0m05:55:26.583680 [debug] [MainThread]: Using postgres connection "master"
+[0m05:55:26.583921 [debug] [MainThread]: On master: BEGIN
+[0m05:55:26.584244 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m05:55:26.584460 [debug] [MainThread]: On master: COMMIT
+[0m05:55:26.584655 [debug] [MainThread]: Using postgres connection "master"
+[0m05:55:26.584834 [debug] [MainThread]: On master: COMMIT
+[0m05:55:26.585078 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m05:55:26.585302 [debug] [MainThread]: On master: Close
+[0m05:55:26.585772 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m05:55:26.586042 [info ] [MainThread]: 
+[0m05:55:26.588395 [debug] [Thread-1  ]: Began running node model.crypto_etl.my_first_dbt_model
+[0m05:55:26.589020 [info ] [Thread-1  ]: 1 of 2 START sql table model crypto_candles.my_first_dbt_model ................. [RUN]
+[0m05:55:26.589795 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_crypto_db_crypto_candles, now model.crypto_etl.my_first_dbt_model)
+[0m05:55:26.590199 [debug] [Thread-1  ]: Began compiling node model.crypto_etl.my_first_dbt_model
+[0m05:55:26.594223 [debug] [Thread-1  ]: Writing injected SQL for node "model.crypto_etl.my_first_dbt_model"
+[0m05:55:26.595059 [debug] [Thread-1  ]: Timing info for model.crypto_etl.my_first_dbt_model (compile): 05:55:26.590420 => 05:55:26.594894
+[0m05:55:26.595369 [debug] [Thread-1  ]: Began executing node model.crypto_etl.my_first_dbt_model
+[0m05:55:26.615720 [debug] [Thread-1  ]: Writing runtime sql for node "model.crypto_etl.my_first_dbt_model"
+[0m05:55:26.616471 [debug] [Thread-1  ]: Using postgres connection "model.crypto_etl.my_first_dbt_model"
+[0m05:55:26.616773 [debug] [Thread-1  ]: On model.crypto_etl.my_first_dbt_model: BEGIN
+[0m05:55:26.617009 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m05:55:26.620859 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m05:55:26.621103 [debug] [Thread-1  ]: Using postgres connection "model.crypto_etl.my_first_dbt_model"
+[0m05:55:26.621345 [debug] [Thread-1  ]: On model.crypto_etl.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "node_id": "model.crypto_etl.my_first_dbt_model"} */
+
+  
+    
+
+  create  table "crypto_db"."crypto_candles"."my_first_dbt_model__dbt_tmp"
+  
+  
+    as
+  
+  (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+  
+[0m05:55:26.622842 [debug] [Thread-1  ]: SQL status: SELECT 2 in 0.0 seconds
+[0m05:55:26.626066 [debug] [Thread-1  ]: Using postgres connection "model.crypto_etl.my_first_dbt_model"
+[0m05:55:26.626325 [debug] [Thread-1  ]: On model.crypto_etl.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "node_id": "model.crypto_etl.my_first_dbt_model"} */
+alter table "crypto_db"."crypto_candles"."my_first_dbt_model" rename to "my_first_dbt_model__dbt_backup"
+[0m05:55:26.626781 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m05:55:26.628422 [debug] [Thread-1  ]: Using postgres connection "model.crypto_etl.my_first_dbt_model"
+[0m05:55:26.628677 [debug] [Thread-1  ]: On model.crypto_etl.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "node_id": "model.crypto_etl.my_first_dbt_model"} */
+alter table "crypto_db"."crypto_candles"."my_first_dbt_model__dbt_tmp" rename to "my_first_dbt_model"
+[0m05:55:26.629129 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m05:55:26.639612 [debug] [Thread-1  ]: On model.crypto_etl.my_first_dbt_model: COMMIT
+[0m05:55:26.639876 [debug] [Thread-1  ]: Using postgres connection "model.crypto_etl.my_first_dbt_model"
+[0m05:55:26.640111 [debug] [Thread-1  ]: On model.crypto_etl.my_first_dbt_model: COMMIT
+[0m05:55:26.645017 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m05:55:26.648833 [debug] [Thread-1  ]: Applying DROP to: "crypto_db"."crypto_candles"."my_first_dbt_model__dbt_backup"
+[0m05:55:26.651336 [debug] [Thread-1  ]: Using postgres connection "model.crypto_etl.my_first_dbt_model"
+[0m05:55:26.651606 [debug] [Thread-1  ]: On model.crypto_etl.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "node_id": "model.crypto_etl.my_first_dbt_model"} */
+drop table if exists "crypto_db"."crypto_candles"."my_first_dbt_model__dbt_backup" cascade
+[0m05:55:26.654754 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.0 seconds
+[0m05:55:26.655513 [debug] [Thread-1  ]: Timing info for model.crypto_etl.my_first_dbt_model (execute): 05:55:26.595576 => 05:55:26.655416
+[0m05:55:26.655762 [debug] [Thread-1  ]: On model.crypto_etl.my_first_dbt_model: Close
+[0m05:55:26.656206 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bba662f7-a657-47a4-b35c-7ceaa40b5af6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c52ec2eb0>]}
+[0m05:55:26.656596 [info ] [Thread-1  ]: 1 of 2 OK created sql table model crypto_candles.my_first_dbt_model ............ [[32mSELECT 2[0m in 0.07s]
+[0m05:55:26.656988 [debug] [Thread-1  ]: Finished running node model.crypto_etl.my_first_dbt_model
+[0m05:55:26.657825 [debug] [Thread-2  ]: Began running node model.crypto_etl.my_second_dbt_model
+[0m05:55:26.658393 [info ] [Thread-2  ]: 2 of 2 START sql table model crypto_candles.my_second_dbt_model ................ [RUN]
+[0m05:55:26.659250 [debug] [Thread-2  ]: Acquiring new postgres connection 'model.crypto_etl.my_second_dbt_model'
+[0m05:55:26.659687 [debug] [Thread-2  ]: Began compiling node model.crypto_etl.my_second_dbt_model
+[0m05:55:26.662462 [debug] [Thread-2  ]: Writing injected SQL for node "model.crypto_etl.my_second_dbt_model"
+[0m05:55:26.663412 [debug] [Thread-2  ]: Timing info for model.crypto_etl.my_second_dbt_model (compile): 05:55:26.659955 => 05:55:26.663192
+[0m05:55:26.663844 [debug] [Thread-2  ]: Began executing node model.crypto_etl.my_second_dbt_model
+[0m05:55:26.667902 [debug] [Thread-2  ]: Writing runtime sql for node "model.crypto_etl.my_second_dbt_model"
+[0m05:55:26.668732 [debug] [Thread-2  ]: Using postgres connection "model.crypto_etl.my_second_dbt_model"
+[0m05:55:26.669148 [debug] [Thread-2  ]: On model.crypto_etl.my_second_dbt_model: BEGIN
+[0m05:55:26.669511 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+[0m05:55:26.673250 [debug] [Thread-2  ]: SQL status: BEGIN in 0.0 seconds
+[0m05:55:26.673705 [debug] [Thread-2  ]: Using postgres connection "model.crypto_etl.my_second_dbt_model"
+[0m05:55:26.674106 [debug] [Thread-2  ]: On model.crypto_etl.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "node_id": "model.crypto_etl.my_second_dbt_model"} */
+
+  
+    
+
+  create  table "crypto_db"."crypto_candles"."my_second_dbt_model__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- Use the `ref` function to select from other models
+
+select *
+from "crypto_db"."crypto_candles"."my_first_dbt_model"
+where id = 1
+  );
+  
+[0m05:55:26.675166 [debug] [Thread-2  ]: SQL status: SELECT 1 in 0.0 seconds
+[0m05:55:26.678329 [debug] [Thread-2  ]: Using postgres connection "model.crypto_etl.my_second_dbt_model"
+[0m05:55:26.678797 [debug] [Thread-2  ]: On model.crypto_etl.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "node_id": "model.crypto_etl.my_second_dbt_model"} */
+alter table "crypto_db"."crypto_candles"."my_second_dbt_model" rename to "my_second_dbt_model__dbt_backup"
+[0m05:55:26.679465 [debug] [Thread-2  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m05:55:26.682578 [debug] [Thread-2  ]: Using postgres connection "model.crypto_etl.my_second_dbt_model"
+[0m05:55:26.682991 [debug] [Thread-2  ]: On model.crypto_etl.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "node_id": "model.crypto_etl.my_second_dbt_model"} */
+alter table "crypto_db"."crypto_candles"."my_second_dbt_model__dbt_tmp" rename to "my_second_dbt_model"
+[0m05:55:26.683574 [debug] [Thread-2  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m05:55:26.685684 [debug] [Thread-2  ]: On model.crypto_etl.my_second_dbt_model: COMMIT
+[0m05:55:26.686087 [debug] [Thread-2  ]: Using postgres connection "model.crypto_etl.my_second_dbt_model"
+[0m05:55:26.686539 [debug] [Thread-2  ]: On model.crypto_etl.my_second_dbt_model: COMMIT
+[0m05:55:26.689518 [debug] [Thread-2  ]: SQL status: COMMIT in 0.0 seconds
+[0m05:55:26.692265 [debug] [Thread-2  ]: Applying DROP to: "crypto_db"."crypto_candles"."my_second_dbt_model__dbt_backup"
+[0m05:55:26.693239 [debug] [Thread-2  ]: Using postgres connection "model.crypto_etl.my_second_dbt_model"
+[0m05:55:26.693714 [debug] [Thread-2  ]: On model.crypto_etl.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "node_id": "model.crypto_etl.my_second_dbt_model"} */
+drop table if exists "crypto_db"."crypto_candles"."my_second_dbt_model__dbt_backup" cascade
+[0m05:55:26.696434 [debug] [Thread-2  ]: SQL status: DROP TABLE in 0.0 seconds
+[0m05:55:26.697959 [debug] [Thread-2  ]: Timing info for model.crypto_etl.my_second_dbt_model (execute): 05:55:26.664101 => 05:55:26.697777
+[0m05:55:26.698380 [debug] [Thread-2  ]: On model.crypto_etl.my_second_dbt_model: Close
+[0m05:55:26.699322 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bba662f7-a657-47a4-b35c-7ceaa40b5af6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c52ec2eb0>]}
+[0m05:55:26.699962 [info ] [Thread-2  ]: 2 of 2 OK created sql table model crypto_candles.my_second_dbt_model ........... [[32mSELECT 1[0m in 0.04s]
+[0m05:55:26.700504 [debug] [Thread-2  ]: Finished running node model.crypto_etl.my_second_dbt_model
+[0m05:55:26.701847 [debug] [MainThread]: Using postgres connection "master"
+[0m05:55:26.702249 [debug] [MainThread]: On master: BEGIN
+[0m05:55:26.702598 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m05:55:26.706587 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m05:55:26.706835 [debug] [MainThread]: On master: COMMIT
+[0m05:55:26.707037 [debug] [MainThread]: Using postgres connection "master"
+[0m05:55:26.707214 [debug] [MainThread]: On master: COMMIT
+[0m05:55:26.707460 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m05:55:26.707658 [debug] [MainThread]: On master: Close
+[0m05:55:26.708027 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m05:55:26.708233 [debug] [MainThread]: Connection 'model.crypto_etl.my_first_dbt_model' was properly closed.
+[0m05:55:26.708421 [debug] [MainThread]: Connection 'model.crypto_etl.my_second_dbt_model' was properly closed.
+[0m05:55:26.708677 [info ] [MainThread]: 
+[0m05:55:26.708918 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 0.18 seconds (0.18s).
+[0m05:55:26.709363 [debug] [MainThread]: Command end result
+[0m05:55:26.715193 [info ] [MainThread]: 
+[0m05:55:26.715680 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m05:55:26.716864 [info ] [MainThread]: 
+[0m05:55:26.717336 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m05:55:26.718340 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.39261997, "process_user_time": 1.265458, "process_kernel_time": 0.066181, "process_mem_max_rss": "110676", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m05:55:26.719062 [debug] [MainThread]: Command `dbt run` succeeded at 05:55:26.718917 after 0.39 seconds
+[0m05:55:26.719571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c562d00d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c537c1a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c537e2a60>]}
+[0m05:55:26.720005 [debug] [MainThread]: Flushing usage events
+[0m05:56:44.044347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c8c5569d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c8de82c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c8a3bf400>]}
+
+
+============================== 05:56:44.047111 | 3d786294-5145-4a5b-9a98-6f4869dc714c ==============================
+[0m05:56:44.047111 [info ] [MainThread]: Running with dbt=1.7.4
+[0m05:56:44.047720 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/dbt_projects/crypto_etl/logs', 'version_check': 'True', 'profiles_dir': '/home/dbt_projects/crypto_etl', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt test --select example', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m05:56:44.142779 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3d786294-5145-4a5b-9a98-6f4869dc714c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c8a3bffa0>]}
+[0m05:56:44.189744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3d786294-5145-4a5b-9a98-6f4869dc714c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c893e55e0>]}
+[0m05:56:44.190289 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m05:56:44.194909 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m05:56:44.211576 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m05:56:44.211831 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m05:56:44.215275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3d786294-5145-4a5b-9a98-6f4869dc714c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c88fe40d0>]}
+[0m05:56:44.223074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3d786294-5145-4a5b-9a98-6f4869dc714c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c892df850>]}
+[0m05:56:44.223489 [info ] [MainThread]: Found 2 models, 4 tests, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m05:56:44.223812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3d786294-5145-4a5b-9a98-6f4869dc714c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c892df610>]}
+[0m05:56:44.224976 [info ] [MainThread]: 
+[0m05:56:44.225531 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m05:56:44.227012 [debug] [ThreadPool]: Acquiring new postgres connection 'list_crypto_db_crypto_candles'
+[0m05:56:44.235101 [debug] [ThreadPool]: Using postgres connection "list_crypto_db_crypto_candles"
+[0m05:56:44.235552 [debug] [ThreadPool]: On list_crypto_db_crypto_candles: BEGIN
+[0m05:56:44.235836 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:56:44.241331 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m05:56:44.241638 [debug] [ThreadPool]: Using postgres connection "list_crypto_db_crypto_candles"
+[0m05:56:44.241905 [debug] [ThreadPool]: On list_crypto_db_crypto_candles: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "connection_name": "list_crypto_db_crypto_candles"} */
+select
+      'crypto_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'crypto_candles'
+    union all
+    select
+      'crypto_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'crypto_candles'
+    union all
+    select
+      'crypto_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'crypto_candles'
+  
+[0m05:56:44.244605 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.0 seconds
+[0m05:56:44.245608 [debug] [ThreadPool]: On list_crypto_db_crypto_candles: ROLLBACK
+[0m05:56:44.245928 [debug] [ThreadPool]: On list_crypto_db_crypto_candles: Close
+[0m05:56:44.251040 [debug] [MainThread]: Using postgres connection "master"
+[0m05:56:44.251501 [debug] [MainThread]: On master: BEGIN
+[0m05:56:44.251916 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m05:56:44.256311 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m05:56:44.256693 [debug] [MainThread]: Using postgres connection "master"
+[0m05:56:44.257148 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m05:56:44.260686 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m05:56:44.262015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3d786294-5145-4a5b-9a98-6f4869dc714c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c8926abe0>]}
+[0m05:56:44.262541 [debug] [MainThread]: On master: ROLLBACK
+[0m05:56:44.262987 [debug] [MainThread]: Using postgres connection "master"
+[0m05:56:44.263335 [debug] [MainThread]: On master: BEGIN
+[0m05:56:44.263755 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m05:56:44.264111 [debug] [MainThread]: On master: COMMIT
+[0m05:56:44.264525 [debug] [MainThread]: Using postgres connection "master"
+[0m05:56:44.264892 [debug] [MainThread]: On master: COMMIT
+[0m05:56:44.265369 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m05:56:44.265778 [debug] [MainThread]: On master: Close
+[0m05:56:44.266505 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m05:56:44.266889 [info ] [MainThread]: 
+[0m05:56:44.268958 [debug] [Thread-1  ]: Began running node test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710
+[0m05:56:44.269371 [debug] [Thread-2  ]: Began running node test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778
+[0m05:56:44.269821 [info ] [Thread-1  ]: 1 of 4 START test not_null_my_first_dbt_model_id ............................... [RUN]
+[0m05:56:44.270390 [info ] [Thread-2  ]: 2 of 4 START test not_null_my_second_dbt_model_id .............................. [RUN]
+[0m05:56:44.271575 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_crypto_db_crypto_candles, now test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710)
+[0m05:56:44.272518 [debug] [Thread-2  ]: Acquiring new postgres connection 'test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778'
+[0m05:56:44.273051 [debug] [Thread-1  ]: Began compiling node test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710
+[0m05:56:44.273622 [debug] [Thread-2  ]: Began compiling node test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778
+[0m05:56:44.291070 [debug] [Thread-1  ]: Writing injected SQL for node "test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m05:56:44.296991 [debug] [Thread-2  ]: Writing injected SQL for node "test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778"
+[0m05:56:44.298450 [debug] [Thread-1  ]: Timing info for test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710 (compile): 05:56:44.274051 => 05:56:44.298152
+[0m05:56:44.299160 [debug] [Thread-2  ]: Timing info for test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778 (compile): 05:56:44.291341 => 05:56:44.298787
+[0m05:56:44.299608 [debug] [Thread-1  ]: Began executing node test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710
+[0m05:56:44.300154 [debug] [Thread-2  ]: Began executing node test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778
+[0m05:56:44.314377 [debug] [Thread-1  ]: Writing runtime sql for node "test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m05:56:44.317209 [debug] [Thread-2  ]: Writing runtime sql for node "test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778"
+[0m05:56:44.318379 [debug] [Thread-1  ]: Using postgres connection "test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m05:56:44.318929 [debug] [Thread-2  ]: Using postgres connection "test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778"
+[0m05:56:44.319327 [debug] [Thread-1  ]: On test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710: BEGIN
+[0m05:56:44.319810 [debug] [Thread-2  ]: On test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778: BEGIN
+[0m05:56:44.320293 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m05:56:44.320871 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+[0m05:56:44.325490 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m05:56:44.325900 [debug] [Thread-2  ]: SQL status: BEGIN in 0.0 seconds
+[0m05:56:44.326383 [debug] [Thread-1  ]: Using postgres connection "test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m05:56:44.326950 [debug] [Thread-2  ]: Using postgres connection "test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778"
+[0m05:56:44.327487 [debug] [Thread-1  ]: On test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "node_id": "test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from "crypto_db"."crypto_candles"."my_first_dbt_model"
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m05:56:44.327990 [debug] [Thread-2  ]: On test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "node_id": "test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from "crypto_db"."crypto_candles"."my_second_dbt_model"
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m05:56:44.329239 [debug] [Thread-1  ]: SQL status: SELECT 1 in 0.0 seconds
+[0m05:56:44.329645 [debug] [Thread-2  ]: SQL status: SELECT 1 in 0.0 seconds
+[0m05:56:44.331758 [debug] [Thread-1  ]: Timing info for test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710 (execute): 05:56:44.300540 => 05:56:44.331506
+[0m05:56:44.333492 [debug] [Thread-2  ]: Timing info for test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778 (execute): 05:56:44.314622 => 05:56:44.333210
+[0m05:56:44.334023 [debug] [Thread-1  ]: On test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710: ROLLBACK
+[0m05:56:44.334558 [debug] [Thread-2  ]: On test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778: ROLLBACK
+[0m05:56:44.335174 [debug] [Thread-1  ]: On test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710: Close
+[0m05:56:44.335654 [debug] [Thread-2  ]: On test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778: Close
+[0m05:56:44.336528 [error] [Thread-1  ]: 1 of 4 FAIL 1 not_null_my_first_dbt_model_id ................................... [[31mFAIL 1[0m in 0.07s]
+[0m05:56:44.337781 [info ] [Thread-2  ]: 2 of 4 PASS not_null_my_second_dbt_model_id .................................... [[32mPASS[0m in 0.07s]
+[0m05:56:44.338545 [debug] [Thread-1  ]: Finished running node test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710
+[0m05:56:44.339258 [debug] [Thread-2  ]: Finished running node test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778
+[0m05:56:44.339838 [debug] [Thread-1  ]: Began running node test.crypto_etl.unique_my_first_dbt_model_id.16e066b321
+[0m05:56:44.340541 [debug] [Thread-2  ]: Began running node test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493
+[0m05:56:44.341122 [info ] [Thread-1  ]: 3 of 4 START test unique_my_first_dbt_model_id ................................. [RUN]
+[0m05:56:44.341765 [info ] [Thread-2  ]: 4 of 4 START test unique_my_second_dbt_model_id ................................ [RUN]
+[0m05:56:44.342626 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.crypto_etl.not_null_my_first_dbt_model_id.5fb22c2710, now test.crypto_etl.unique_my_first_dbt_model_id.16e066b321)
+[0m05:56:44.343485 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly test.crypto_etl.not_null_my_second_dbt_model_id.151b76d778, now test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493)
+[0m05:56:44.344021 [debug] [Thread-1  ]: Began compiling node test.crypto_etl.unique_my_first_dbt_model_id.16e066b321
+[0m05:56:44.344530 [debug] [Thread-2  ]: Began compiling node test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493
+[0m05:56:44.351263 [debug] [Thread-1  ]: Writing injected SQL for node "test.crypto_etl.unique_my_first_dbt_model_id.16e066b321"
+[0m05:56:44.356145 [debug] [Thread-2  ]: Writing injected SQL for node "test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493"
+[0m05:56:44.357353 [debug] [Thread-1  ]: Timing info for test.crypto_etl.unique_my_first_dbt_model_id.16e066b321 (compile): 05:56:44.344876 => 05:56:44.357064
+[0m05:56:44.357913 [debug] [Thread-2  ]: Timing info for test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493 (compile): 05:56:44.351568 => 05:56:44.357638
+[0m05:56:44.358299 [debug] [Thread-1  ]: Began executing node test.crypto_etl.unique_my_first_dbt_model_id.16e066b321
+[0m05:56:44.358794 [debug] [Thread-2  ]: Began executing node test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493
+[0m05:56:44.361567 [debug] [Thread-1  ]: Writing runtime sql for node "test.crypto_etl.unique_my_first_dbt_model_id.16e066b321"
+[0m05:56:44.365552 [debug] [Thread-2  ]: Writing runtime sql for node "test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493"
+[0m05:56:44.366671 [debug] [Thread-1  ]: Using postgres connection "test.crypto_etl.unique_my_first_dbt_model_id.16e066b321"
+[0m05:56:44.367202 [debug] [Thread-2  ]: Using postgres connection "test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493"
+[0m05:56:44.367583 [debug] [Thread-1  ]: On test.crypto_etl.unique_my_first_dbt_model_id.16e066b321: BEGIN
+[0m05:56:44.368055 [debug] [Thread-2  ]: On test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493: BEGIN
+[0m05:56:44.368562 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m05:56:44.369005 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+[0m05:56:44.373781 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m05:56:44.374221 [debug] [Thread-2  ]: SQL status: BEGIN in 0.0 seconds
+[0m05:56:44.374713 [debug] [Thread-1  ]: Using postgres connection "test.crypto_etl.unique_my_first_dbt_model_id.16e066b321"
+[0m05:56:44.375230 [debug] [Thread-2  ]: Using postgres connection "test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493"
+[0m05:56:44.375756 [debug] [Thread-1  ]: On test.crypto_etl.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "node_id": "test.crypto_etl.unique_my_first_dbt_model_id.16e066b321"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "crypto_db"."crypto_candles"."my_first_dbt_model"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m05:56:44.376292 [debug] [Thread-2  ]: On test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "crypto_etl", "target_name": "dev", "node_id": "test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "crypto_db"."crypto_candles"."my_second_dbt_model"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m05:56:44.377855 [debug] [Thread-1  ]: SQL status: SELECT 1 in 0.0 seconds
+[0m05:56:44.378258 [debug] [Thread-2  ]: SQL status: SELECT 1 in 0.0 seconds
+[0m05:56:44.379834 [debug] [Thread-1  ]: Timing info for test.crypto_etl.unique_my_first_dbt_model_id.16e066b321 (execute): 05:56:44.359169 => 05:56:44.379588
+[0m05:56:44.381536 [debug] [Thread-2  ]: Timing info for test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493 (execute): 05:56:44.361921 => 05:56:44.381264
+[0m05:56:44.382099 [debug] [Thread-1  ]: On test.crypto_etl.unique_my_first_dbt_model_id.16e066b321: ROLLBACK
+[0m05:56:44.382646 [debug] [Thread-2  ]: On test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493: ROLLBACK
+[0m05:56:44.383295 [debug] [Thread-1  ]: On test.crypto_etl.unique_my_first_dbt_model_id.16e066b321: Close
+[0m05:56:44.383774 [debug] [Thread-2  ]: On test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493: Close
+[0m05:56:44.384636 [info ] [Thread-1  ]: 3 of 4 PASS unique_my_first_dbt_model_id ....................................... [[32mPASS[0m in 0.04s]
+[0m05:56:44.385698 [info ] [Thread-2  ]: 4 of 4 PASS unique_my_second_dbt_model_id ...................................... [[32mPASS[0m in 0.04s]
+[0m05:56:44.386432 [debug] [Thread-1  ]: Finished running node test.crypto_etl.unique_my_first_dbt_model_id.16e066b321
+[0m05:56:44.387103 [debug] [Thread-2  ]: Finished running node test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493
+[0m05:56:44.389005 [debug] [MainThread]: Using postgres connection "master"
+[0m05:56:44.389448 [debug] [MainThread]: On master: BEGIN
+[0m05:56:44.389874 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m05:56:44.394012 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m05:56:44.394408 [debug] [MainThread]: On master: COMMIT
+[0m05:56:44.394731 [debug] [MainThread]: Using postgres connection "master"
+[0m05:56:44.395010 [debug] [MainThread]: On master: COMMIT
+[0m05:56:44.395385 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m05:56:44.395691 [debug] [MainThread]: On master: Close
+[0m05:56:44.396360 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m05:56:44.396667 [debug] [MainThread]: Connection 'test.crypto_etl.unique_my_first_dbt_model_id.16e066b321' was properly closed.
+[0m05:56:44.396930 [debug] [MainThread]: Connection 'test.crypto_etl.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m05:56:44.397248 [info ] [MainThread]: 
+[0m05:56:44.397597 [info ] [MainThread]: Finished running 4 tests in 0 hours 0 minutes and 0.17 seconds (0.17s).
+[0m05:56:44.398788 [debug] [MainThread]: Command end result
+[0m05:56:44.407891 [info ] [MainThread]: 
+[0m05:56:44.408400 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m05:56:44.408875 [info ] [MainThread]: 
+[0m05:56:44.409331 [error] [MainThread]: [31mFailure in test not_null_my_first_dbt_model_id (models/example/schema.yml)[0m
+[0m05:56:44.409658 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m05:56:44.409935 [info ] [MainThread]: 
+[0m05:56:44.410214 [info ] [MainThread]:   compiled Code at target/compiled/crypto_etl/models/example/schema.yml/not_null_my_first_dbt_model_id.sql
+[0m05:56:44.410556 [info ] [MainThread]: 
+[0m05:56:44.410906 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=1 SKIP=0 TOTAL=4
+[0m05:56:44.411751 [debug] [MainThread]: Resource report: {"command_name": "test", "command_wall_clock_time": 0.39415577, "process_user_time": 1.319803, "process_kernel_time": 0.068147, "process_mem_max_rss": "107872", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m05:56:44.412308 [debug] [MainThread]: Command `dbt test` failed at 05:56:44.412196 after 0.39 seconds
+[0m05:56:44.412715 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c8c5569d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c88f6b400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c8a3cbb50>]}
+[0m05:56:44.413117 [debug] [MainThread]: Flushing usage events
