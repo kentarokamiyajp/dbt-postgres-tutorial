@@ -1,0 +1,12 @@
+crypto_etl:
+  outputs:
+    dev:
+      dbname: crypto_db
+      host: 172.30.100.1
+      pass: postgres
+      port: 5432
+      schema: crypto_candles
+      threads: 2
+      type: postgres
+      user: postgres
+  target: dev

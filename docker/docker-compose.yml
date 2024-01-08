@@ -1,0 +1,32 @@
+version: "3.9"
+services:
+  postgres_host:
+    image: postgres:latest
+    hostname: postgres_host
+    container_name: postgres_host
+    restart: always
+    ports: 
+      - "15432:5432"
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+    volumes:
+      - ./postgres/init:/docker-entrypoint-initdb.d
+    networks:
+      shared-network:
+        ipv4_address: "172.30.100.1"
+
+  dbt_host:
+    build:
+      dockerfile: Dockerfile
+    hostname: dbt_host
+    container_name: dbt_host
+    volumes:
+      - ../dbt_projects:/home/dbt_projects
+    networks:
+      shared-network:
+        ipv4_address: "172.30.100.2"
+
+networks:
+  shared-network:
+    external: true
