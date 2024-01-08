@@ -5,7 +5,7 @@ crypto_etl:
       host: 172.30.100.1
       pass: postgres
       port: 5432
-      schema: crypto_candles
+      schema: public
       threads: 2
       type: postgres
       user: postgres

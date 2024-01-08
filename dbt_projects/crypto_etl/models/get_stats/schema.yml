@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: weekly_avg_price
+    description: "A custom dbt model"
+    tests:
+      - unique:
+          column_name: "(id || '-' || week_num)"
+    columns:
+      - name: id
+        description: "The id mush have a value. E.g., BTC_USDT"
+        tests:
+          - not_null
