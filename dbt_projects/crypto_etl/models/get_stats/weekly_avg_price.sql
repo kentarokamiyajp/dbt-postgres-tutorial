@@ -6,7 +6,7 @@ crypto_candles_with_week_number AS (
         *,
         EXTRACT('week' FROM dt) AS week_num
     FROM
-        public.crypto_candles
+        {{ var('crypto_candles') }}
 ),
 avg_price AS (
     SELECT
