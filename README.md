@@ -14,17 +14,23 @@
     cd dbt-trino-python/docker
     ```
 
-3. Create a container
+3. Create a network
+
+    ```[bash]
+    docker network create --driver=bridge --subnet=172.30.0.0/16 --gateway=172.30.0.1 shared-network
+    ```
+
+4. Create a container
 
     ``` [bash]
     docker compose up -d --build
     ```
 
-4. The following containers will be up
+5. The following containers will be up
    - dbt_host
-     - This repository is mounted to ```/home/dbt_projects```
+      - This repository is mounted to ```/home/dbt_projects```
    - postgres_host
-     - Initial data is automatically inserted.
+      - Initial data is automatically inserted.
 
 ## Run the DBT models
 
@@ -86,7 +92,13 @@
     # /home/dbt_projects/crypto_etl
     ```
 
-2. Run the following dbt commands
+2. Compiling check
+
+    ``` [bash]
+    dbt compile
+    ```
+
+3. Run the following dbt commands
 
     - Run the custom model
 
