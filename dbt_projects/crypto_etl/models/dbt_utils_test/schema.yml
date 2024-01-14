@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: dbt_utils
+    columns:
+      - name: id
+        description: "The id mush have a value. E.g., BTC_USDT"
+        tests:
+          - dbt_utils.not_accepted_values:
+              values: ['USDT_BTC']

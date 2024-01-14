@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: crypto_db # this is the source_name
+    schema: public
+    tables:
+      - name: crypto_candles # this is the table_name

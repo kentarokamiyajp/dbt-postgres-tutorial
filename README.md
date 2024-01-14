@@ -115,3 +115,20 @@
         ``` [bash]
         dbt test --select get_stats
         ```
+
+## Install packages
+
+1. Create a packages.yml in the same directory of dbt_project.yml
+2. Write package name that you want.
+
+    ```YAML:dbt_project.yml
+    packages:
+    - package: dbt-labs/dbt_utils
+        version: 1.1.1
+    ```
+
+3. Install the packages. Run the command from ```dbt_projects/crypto_etl``` in my case.
+
+    ```bash
+    dbt deps
+    ```

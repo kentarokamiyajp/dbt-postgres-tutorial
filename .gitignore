@@ -1,2 +1,3 @@
 dbt_projects/crypto_etl/target
 dbt_projects/crypto_etl/logs
+dbt_projects/crypto_etl/dbt_packages/*
