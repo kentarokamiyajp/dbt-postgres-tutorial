@@ -1,0 +1,14 @@
+version: 2
+
+seeds:
+  - name: crypto_daily_candles
+    config:
+      column_types:
+        id: varchar(10)
+        low: real
+        high: real
+        open: real
+        close: real
+        volume: double precision
+        dt: date
+      delimiter: ","
