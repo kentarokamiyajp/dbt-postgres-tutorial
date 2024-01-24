@@ -116,6 +116,23 @@
         dbt test --select get_stats
         ```
 
+### Seeds a CSV file
+
+1. Put CSV files in ```dbt_projects/crypto_etl/seeds``` that you want to import
+
+2. Check the working directory.
+
+    ``` [bash]
+    pwd
+    # /home/dbt_projects/crypto_etl
+    ```
+
+3. Run the following command.
+
+    ```[bash]
+    dbt seeds --select init
+    ```
+
 ## Install packages
 
 1. Create a packages.yml in the same directory of dbt_project.yml
